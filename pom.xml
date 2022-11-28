@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.tebon</groupId>
+    <artifactId>xuanwu-stream</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0</version>
+    <modules>
+        <module>xuanwu-deployer</module>
+        <module>xuanwu-flink-sysnc</module>
+    </modules>
+
+    <build>
+        <plugins>
+
+
+             <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-compiler-plugin</artifactId>
+               <version>3.7.0</version>
+               <configuration>
+                   <source>11</source>
+                   <target>11</target>
+                   <encoding>UTF-8</encoding>
+               </configuration>
+           </plugin>
+
+           <!-- <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <descriptors>
+                        <descriptor>xuanwu-deployer/src/main/assembly/deploy.xml</descriptor>
+                    </descriptors>
+                    <finalName>${project.artifactId}_${project.version}</finalName>
+                    <outputDirectory>${project.basedir}/packages</outputDirectory>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>-->
+
+
+
+
+        </plugins>
+    </build>
+
+</project>
